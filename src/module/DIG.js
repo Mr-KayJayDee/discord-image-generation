@@ -1,14 +1,21 @@
 const Canvas = require("canvas");
+
 const jimp = require("jimp");
+
 const GIFEncoder = require("gifencoder");
-const circle = require('@jimp/plugin-circle')
+
 const configure = require('@jimp/custom')
 
-// load custom plugins
+const circle = require('@jimp/plugin-circle')
+
 configure({ plugins: [circle] }, jimp);
 
 class DIG {
 
+    /**
+     * Beautiful
+     * @param {image} image 
+     */
     static async beautiful(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let base = await jimp.read(__dirname +"/assets/beautiful.png");
@@ -24,6 +31,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Facepalm
+     * @param {image} image 
+     */
     static async facepalm(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let canvas = Canvas.createCanvas(632, 357);
@@ -37,6 +48,10 @@ class DIG {
         return canvas.toBuffer();
     }
 
+    /**
+     * 
+     * @param {image} image 
+     */
     static async gay(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await Canvas.loadImage(__dirname +"/assets/gay.png");
@@ -48,6 +63,11 @@ class DIG {
         return canvas.toBuffer();
     }
 
+    /**
+     * Kiss
+     * @param {image1} image1 
+     * @param {image2} image2 
+     */
     static async kiss(image1, image2) {
         if (!image1) throw new Error("You must provide an image as a first argument.");
         if (!image2) throw new Error("You must provide an image as a second argument.");
@@ -68,6 +88,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Rip
+     * @param {image} image 
+     */
     static async rip(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         const canvas = Canvas.createCanvas(244, 253);
@@ -79,6 +103,11 @@ class DIG {
         return canvas.toBuffer();
     }
 
+    /**
+     * Spank
+     * @param {image1} image1 
+     * @param {image2} image2 
+     */
     static async spank(image1, image2) {
         if (!image1) throw new Error("You must provide an image as a first argument.");
         if (!image2) throw new Error("You must provide an image as a second argument.");
@@ -99,6 +128,11 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Batslap
+     * @param {image1} image1 
+     * @param {image2} image2 
+     */
     static async batslap(image1, image2) {
         if (!image1) throw new Error("You must provide an image as a first argument.");
         if (!image2) throw new Error("You must provide an image as a second argument.");
@@ -119,6 +153,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Affect
+     * @param {image} image 
+     */
     static async affect(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let base = await jimp.read(__dirname + "/assets/affect.png");
@@ -132,6 +170,11 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Blur
+     * @param {image} image 
+     * @param {number} level 
+     */
     static async blur(image, level = 5) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
@@ -144,6 +187,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Geryscale
+     * @param {image} image 
+     */
     static async greyscale(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
@@ -156,6 +203,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Sepia
+     * @param {image} image 
+     */
     static async sepia(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
@@ -168,6 +219,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Invert
+     * @param {image} image 
+     */
     static async invert(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
@@ -180,6 +235,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Delete
+     * @param {image} image 
+     */
     static async delete(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await jimp.read(__dirname + "/assets/delete.png");
@@ -193,6 +252,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Trash
+     * @param {image} image 
+     */
     static async trash(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await jimp.read(__dirname +"/assets/trash.png");
@@ -207,6 +270,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Color
+     * @param {color} color 
+     */
     static async color(color = "#FFFFFF") {
         const canvas = Canvas.createCanvas(2048, 2048);
         const ctx = canvas.getContext("2d");
@@ -215,6 +282,10 @@ class DIG {
         return canvas.toBuffer();
     }
 
+    /**
+     * Hitler
+     * @param {image} image 
+     */
     static async hitler(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await jimp.read(__dirname + "/assets/hitler.png");
@@ -228,6 +299,11 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Bed
+     * @param {image1} image1 
+     * @param {image2} image2 
+     */
     static async bed(image1, image2) {
         if (!image1) throw new Error("You must provide an image as a first argument.");
         if (!image2) throw new Error("You must provide an image as a second argument.");
@@ -250,6 +326,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Wanted
+     * @param {image} image 
+     */
     static async wanted(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let base = await jimp.read(__dirname + "/assets/wanted.png");
@@ -263,6 +343,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * Triggered
+     * @param {image} image 
+     */
     static async triggered(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         const base = await Canvas.loadImage(__dirname +"/assets/triggered.png");
@@ -287,6 +371,10 @@ class DIG {
         return GIF.out.getData();
     }
 
+    /**
+     * Circle
+     * @param {image} image 
+     */
     static async circle(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
@@ -299,6 +387,10 @@ class DIG {
         return raw;
     }
 
+    /**
+     * 
+     * @param {image} image 
+     */
     static async jail(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await Canvas.loadImage(__dirname +"/assets/jail.png");
@@ -310,6 +402,10 @@ class DIG {
         return canvas.toBuffer();
     }
 
+    /**
+     * 
+     * @param {image} image 
+     */
     static async mms(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await Canvas.loadImage(__dirname +"/assets/mms.png");
