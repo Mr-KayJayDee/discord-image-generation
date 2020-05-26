@@ -41,25 +41,31 @@ class DIG {
         if (!image) throw new Error("You must provide an image as a first argument.");
         let bg = await Canvas.loadImage(__dirname +"/assets/gay.png");
         let img = await Canvas.loadImage(image);
-        const canvas = Canvas.createCanvas(400, 400);
+        const canvas = Canvas.createCanvas(480, 480);
         const ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0, 400, 400);
-        ctx.drawImage(bg, 0, 0, 400, 400);
+        ctx.drawImage(img, 0, 0, 480, 480);
+        ctx.drawImage(bg, 0, 0, 480, 480);
         return canvas.toBuffer();
     }
 
     static async kiss(image1, image2) {
         if (!image1) throw new Error("You must provide an image as a first argument.");
         if (!image2) throw new Error("You must provide an image as a second argument.");
-        const canvas = Canvas.createCanvas(768, 574);
-        const ctx = canvas.getContext("2d");
-        const background = await Canvas.loadImage(__dirname +"/assets/kiss.png");
-        ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-        const avatar = await Canvas.loadImage(image1);
-        const avatar1 = await Canvas.loadImage(image2);
-        ctx.drawImage(avatar1, 370, 25, 200, 200);
-        ctx.drawImage(avatar, 150, 25, 200, 200);
-        return canvas.toBuffer();
+        let base = await jimp.read(__dirname+"/assets/kiss.png");
+        image1 = await jimp.read(image1);
+        image2 = await jimp.read(image2);
+        image1.circle();
+        image2.circle();
+        base.resize(768, 574);
+        image1.resize(200, 200);
+        image2.resize(200, 200);
+        base.composite(image1, 150, 25);
+        base.composite(image2, 350, 25);
+        let raw;
+        base.getBuffer("image/png", (err, buffer) => {
+            raw = buffer;
+        });
+        return raw;
     }
 
     static async rip(image) {
@@ -79,6 +85,8 @@ class DIG {
         let bg = await jimp.read(__dirname +"/assets/spank.png");
         image1 = await jimp.read(image1);
         image2 = await jimp.read(image2);
+        image1.circle();
+        image2.circle();
         bg.resize(500, 500);
         image1.resize(140, 140);
         image2.resize(120, 120);
@@ -127,6 +135,7 @@ class DIG {
     static async blur(image, level = 5) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
+        image.resize(480, 480)
         image.blur(isNaN(level) ? 5 : parseInt(level));
         let raw;
         image.getBuffer("image/png", (err, buffer) => {
@@ -138,6 +147,7 @@ class DIG {
     static async greyscale(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
+        image.resize(480, 480)
         image.greyscale();
         let raw;
         image.getBuffer("image/png", (err, buffer) => {
@@ -149,6 +159,7 @@ class DIG {
     static async sepia(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
+        image.resize(480, 480)
         image.sepia();
         let raw;
         image.getBuffer("image/png", (err, buffer) => {
@@ -160,6 +171,7 @@ class DIG {
     static async invert(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
+        image.resize(480, 480)
         image.invert();
         let raw;
         image.getBuffer("image/png", (err, buffer) => {
@@ -222,6 +234,8 @@ class DIG {
         let bg = await jimp.read(__dirname +"/assets/bed.png");
         image1 = await jimp.read(image1);
         image2 = await jimp.read(image2);
+        image1.circle();
+        image2.circle();
         image1.resize(100, 100);
         image2.resize(70, 70);
         let image3 = image1.clone().resize(70, 70);
@@ -249,7 +263,7 @@ class DIG {
         return raw;
     }
 
-    static async trigger(image) {
+    static async triggered(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         const base = await Canvas.loadImage(__dirname +"/assets/triggered.png");
         const img = await Canvas.loadImage(image);
@@ -276,6 +290,7 @@ class DIG {
     static async circle(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
         image = await jimp.read(image);
+        image.resize(480, 480);
         image.circle();
         let raw;
         image.getBuffer("image/png", (err, buffer) => {
