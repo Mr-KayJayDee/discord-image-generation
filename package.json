@@ -1,6 +1,6 @@
 {
   "name": "discord-image-generation",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "discord-image-generation is a powerfull module that allow you to generate awesome images.",
   "main": "index.js",
   "scripts": {
