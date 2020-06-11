@@ -17,6 +17,17 @@ A correct and understandable issue contains :
 
 You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.</a>
 
+# Changelog 
+
+## v0.1.9
+- Added options for the wanted.
+    - The base image has been updated
+    - There is now a random price diplayed
+    - You can now configure a currency
+- Added .thomas()
+- 
+
+
 # Download
 
 You can download it from <a href="https://www.npmjs.com/package/discord-image-generation">npmjs</a>.
@@ -137,9 +148,11 @@ bot.login("super_secret_token")
 
 ![Invert](https://cdn.discordapp.com/attachments/692101136802643989/714970523469217832/invert.png)
 
-- .wanted(`<Avatar>`);
+- .wanted(`<Avatar>`, `<Currency>`);
 
-![Wanted](https://cdn.discordapp.com/attachments/692101136802643989/714970791174996038/wanted.png)
+> Currency ($, €, ...)
+
+![Wanted](https://cdn.discordapp.com/attachments/720225919523881041/720538669412253757/wanted.png)
 
 - .beautiful(`<Avatar>`);
 
@@ -156,3 +169,7 @@ bot.login("super_secret_token")
 - .delete(`<Avatar>`);
 
 ![Delete](https://cdn.discordapp.com/attachments/692101136802643989/714971728849141901/delete.png)
+
+- .thomas(`<Avatar>`);
+
+![Thomas](https://cdn.discordapp.com/attachments/720225919523881041/720543470850146345/thomas.png)
