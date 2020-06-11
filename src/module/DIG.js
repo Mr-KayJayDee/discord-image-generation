@@ -428,7 +428,6 @@ class DIG {
      */
     static async thomas(image) {
         if (!image) throw new Error("You must provide an image as a first argument.");
-        var price = Math.floor(Math.random() * 1887088) + 329889
         const canvas = Canvas.createCanvas(841, 1058);
         const ctx = canvas.getContext("2d");
         const avatar = await Canvas.loadImage(image);
