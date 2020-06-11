@@ -83,96 +83,96 @@ bot.login("super_secret_token")
 
 - .blur(`<Avatar>`, `<Level(Number)>`);
 
-![Blur](https://cdn.discordapp.com/attachments/692101136802643989/714952645063999548/blur.png)
+![Blur](https://imgur.com/JqpNFTY.png)
 
 - .facepalm(`<Avatar>`);
 
-![Facepalm](https://cdn.discordapp.com/attachments/692101136802643989/714952886123233331/facepalm.png)
+![Facepalm](https://imgur.com/cdPC3P1.png)
 
 - .gay(`<Avatar>`);
 
-![Gay](https://cdn.discordapp.com/attachments/692101136802643989/714953399308910664/gay.png)
+![Gay](https://imgur.com/BDTrXzZ.png)
 
 - .rip(`<Avatar>`);
 
-![RIP](https://cdn.discordapp.com/attachments/692101136802643989/714954650121404517/rip.png)
+![RIP](https://imgur.com/MgsRH8o.png)
 
 - .trash(`<Avatar>`);
 
-![Trash](https://cdn.discordapp.com/attachments/692101136802643989/714955652216127498/trash.png)
+![Trash](https://imgur.com/nwAHGgF.png)
 
 - .circle(`<Avatar>`);
 
-![Circle](https://cdn.discordapp.com/attachments/692101136802643989/714956290270691358/circle.png)
+![Circle](https://imgur.com/0Zo8NYS.png)
 
 - .greyscale(`<Avatar>`);
 
-![Greyscale](https://cdn.discordapp.com/attachments/692101136802643989/714956749521551411/greyscale.png)
+![Greyscale](https://imgur.com/h3ahY7Z.png)
 
 - .kiss(`<Avatar>`, `<Avatar2>`);
 
-![Kiss](https://cdn.discordapp.com/attachments/692101136802643989/714960724668973106/kiss.png)
+![Kiss](https://imgur.com/sSoCAeH.png)
 
 - .sepia(`<Avatar>`);
 
-![Sepia](https://cdn.discordapp.com/attachments/692101136802643989/714961378917744700/sepia.png)
+![Sepia](https://imgur.com/OTbKVtj.png)
 
 - .mms(`<Avatar>`);
 
-![MMS](https://cdn.discordapp.com/attachments/692101136802643989/714961764692787230/mms.png)
+![MMS](https://imgur.com/nH3URHb.png)
 
 - .spank(`<Avatar>`, `<Avatar2>`);
 
-![Spank](https://cdn.discordapp.com/attachments/692101136802643989/714962287361785906/spank.png)
+![Spank](https://imgur.com/VRvogo7.png)
 
 - .color(`<Color>`);
 
 > An hex color is needed, like "#FF0000"
 
-![Color](https://cdn.discordapp.com/attachments/692101136802643989/714964205127598120/color.png)
+![Color](https://imgur.com/40tMwfe.png)
 
 - .triggered(`<Avatar>`);
 
-![Triggered](https://cdn.discordapp.com/attachments/692101136802643989/714968315214299166/triggered.gif)
+![Triggered](https://imgur.com/0QvyYQa.png)
 
 - .hitler(`<Avatar>`);
 
-![Hitler](https://cdn.discordapp.com/attachments/692101136802643989/714969429598797935/hitler.png)
+![Hitler](https://imgur.com/wK9puxH.png)
 
 - .batslap(`<Avatar>`, `<Avatar2>`);
 
-![Batslap](https://cdn.discordapp.com/attachments/692101136802643989/714969652521861160/batslap.png)
+![Batslap](https://imgur.com/oYMpa5A.png)
 
 - .bed(`<Avatar>`, `<Avatar2>`);
 
-![Bed](https://cdn.discordapp.com/attachments/692101136802643989/714970182946258974/bed.png)
+![Bed](https://imgur.com/b1idSnr.png)
 
 - .invert(`<Avatar>`);
 
-![Invert](https://cdn.discordapp.com/attachments/692101136802643989/714970523469217832/invert.png)
+![Invert](https://imgur.com/Rl0wGQM.png)
 
 - .wanted(`<Avatar>`, `<Currency>`);
 
 > Currency ($, €, ...)
 
-![Wanted](https://cdn.discordapp.com/attachments/720225919523881041/720538669412253757/wanted.png)
+![Wanted](https://imgur.com/SFGRvSK.png)
 
 - .beautiful(`<Avatar>`);
 
-![Beautiful](https://cdn.discordapp.com/attachments/692101136802643989/714971024000811092/beautiful.png)
+![Beautiful](https://imgur.com/HGZkmXo.png)
 
 - .jail(`<Avatar>`);
 
-![Jail](https://cdn.discordapp.com/attachments/692101136802643989/714971265953300571/jail.png)
+![Jail](https://imgur.com/QslACNo.png)
 
 - .affect(`<Avatar>`);
 
-![Affect](https://cdn.discordapp.com/attachments/692101136802643989/714971482207289394/affect.png)
+![Affect](https://imgur.com/g4Gaehb.png)
 
 - .delete(`<Avatar>`);
 
-![Delete](https://cdn.discordapp.com/attachments/692101136802643989/714971728849141901/delete.png)
+![Delete](https://imgur.com/6V1IYJp.png)
 
 - .thomas(`<Avatar>`);
 
-![Thomas](https://cdn.discordapp.com/attachments/720225919523881041/720543470850146345/thomas.png)
+![Thomas](https://imgur.com/5Iv6t9v.png)
