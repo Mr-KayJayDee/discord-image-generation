@@ -25,7 +25,6 @@ You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.<
     - There is now a random price diplayed
     - You can now configure a currency
 - Added .thomas()
-- 
 
 
 # Download
