@@ -30,6 +30,9 @@ You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.<
 - Added .tatoo()
 - Updated JSDoc
 
+## v1.1.12
+- Saved all examples to imgur
+
 
 # Download
 
