@@ -33,6 +33,10 @@ You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.<
 ## v1.1.12
 - Saved all examples to imgur
 
+## v1.1.13
+- Added example for .tatoo()
+- Fixed the litle hole at the top of the users pic on .thomas()
+
 
 # Download
 
@@ -179,3 +183,7 @@ bot.login("super_secret_token")
 - .thomas(`<Avatar>`);
 
 ![Thomas](https://imgur.com/5Iv6t9v.png)
+
+- .tatoo(`<Avatar>`)
+
+![Tatoo](https://imgur.com/wJju4UJ.png)
