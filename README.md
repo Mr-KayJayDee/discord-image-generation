@@ -26,6 +26,10 @@ You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.<
     - You can now configure a currency
 - Added .thomas()
 
+## v0.1.11
+- Added .tatoo()
+- Updated JSDoc
+
 
 # Download
 

@@ -49,7 +49,7 @@ class DIG {
     }
 
     /**
-     * 
+     * Gay
      * @param {image} image 
      */
     static async gay(image) {
@@ -393,7 +393,7 @@ class DIG {
     }
 
     /**
-     * 
+     * Jail
      * @param {image} image 
      */
     static async jail(image) {
@@ -408,7 +408,7 @@ class DIG {
     }
 
     /**
-     * 
+     * MMS
      * @param {image} image 
      */
     static async mms(image) {
@@ -434,6 +434,21 @@ class DIG {
         const background = await Canvas.loadImage(__dirname +"/assets/thomas.png");
         ctx.drawImage(avatar, 220, 200, 400, 400);
         ctx.drawImage(background, 0, 0, 841, 1058);
+        return canvas.toBuffer();
+    }
+
+    /**
+     * Thomas
+     * @param {image} image 
+     */
+    static async tatoo(image) {
+        if (!image) throw new Error("You must provide an image as a first argument.");
+        const canvas = Canvas.createCanvas(750, 1089);
+        const ctx = canvas.getContext("2d");
+        const avatar = await Canvas.loadImage(image);
+        const background = await Canvas.loadImage(__dirname +"/assets/tatoo.png");
+        ctx.drawImage(avatar, 145, 575, 400, 400);
+        ctx.drawImage(background, 0, 0, 750, 1089);
         return canvas.toBuffer();
     }
 }
