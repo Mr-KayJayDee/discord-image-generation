@@ -70,101 +70,101 @@ bot.login("super_secret_token")
 
 ## Filters
 
-- .Blur().getImage(`<Avatar>`, `<Level(Number)>`);
+- ``.Blur().getImage(`<Avatar>`, `<Level(Number)>`);``
 
 ![Blur](https://imgur.com/JqpNFTY.png)
 
-- .Gay().getImage(`<Avatar>`);
+- ``.Gay().getImage(`<Avatar>`);``
 
 ![Gay](https://imgur.com/BDTrXzZ.png)
 
-- .Greyscale().getImage(`<Avatar>`);
+- ``.Greyscale().getImage(`<Avatar>`);``
 
 ![Greyscale](https://imgur.com/h3ahY7Z.png)
 
-- .Invert().getImage(`<Avatar>`);
+- ``.Invert().getImage(`<Avatar>`);``
 
 ![Invert](https://imgur.com/Rl0wGQM.png)
 
-- .Sepia().getImage(`<Avatar>`);
+- ``.Sepia().getImage(`<Avatar>`);``
 
 ![Sepia](https://imgur.com/OTbKVtj.png)
 
 
 ## Gifs
 
-- .Blink().getImage()
+- ``.Blink().getImage()``
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
-- .Triggered().getImage(`<Avatar>`);
+- ``.Triggered().getImage(`<Avatar>`);``
 
 ![Triggered](https://imgur.com/0QvyYQa.gif)
 
 
 ## Montage
 
-- .Affect().getImage(`<Avatar>`);
+- ``.Affect().getImage(`<Avatar>`);``
 
 ![Affect](https://imgur.com/g4Gaehb.png)
 
-- .Batslap().getImage(`<Avatar>`, `<Avatar2>`);
+- ``.Batslap().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Batslap](https://imgur.com/oYMpa5A.png)
 
-- .Beautiful().getImage(`<Avatar>`);
+- ``.Beautiful().getImage(`<Avatar>`);``
 
 ![Beautiful](https://imgur.com/HGZkmXo.png)
 
-- .Bed().getImage(`<Avatar>`, `<Avatar2>`);
+- ``.Bed().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Bed](https://imgur.com/b1idSnr.png)
 
-- .Delete().getImage(`<Avatar>`);
+- ``.Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
 
-- .Facepalm().getImage(`<Avatar>`);
+- ``.Facepalm().getImage(`<Avatar>`);``
 
 ![Facepalm](https://imgur.com/cdPC3P1.png)
 
-- .Hitler().getImage(`<Avatar>`);
+- ``.Hitler().getImage(`<Avatar>`);``
 
 ![Hitler](https://imgur.com/wK9puxH.png)
 
-- .Jail().getImage(`<Avatar>`);
+- ``.Jail().getImage(`<Avatar>`);``
 
 ![Jail](https://imgur.com/QslACNo.png)
 
-- .Kiss().getImage(`<Avatar>`, `<Avatar2>`);
+- ``.Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
 
-- .Mms().getImage(`<Avatar>`);
+- ``.Mms().getImage(`<Avatar>`);``
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
-- .Rip().getImage(`<Avatar>`);
+- ``.Rip().getImage(`<Avatar>`);``
 
 ![RIP](https://imgur.com/MgsRH8o.png)
 
-- .Spank().getImage(`<Avatar>`, `<Avatar2>`);
+- ``.Spank().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Spank](https://imgur.com/VRvogo7.png)
 
-- .Tatoo().getImage(`<Avatar>`)
+- ``.Tatoo().getImage(`<Avatar>`)``
 
 ![Tatoo](https://imgur.com/wJju4UJ.png)
 
-- .Thomas().getImage(`<Avatar>`);
+- ``.Thomas().getImage(`<Avatar>`);``
 
 ![Thomas](https://imgur.com/7R37J2j.png)
 
-- .Trash().getImage(`<Avatar>`);
+- ``.Trash().getImage(`<Avatar>`);``
 
 ![Trash](https://imgur.com/nwAHGgF.png)
 
-- .Wanted().getImage(`<Avatar>`, `<Currency>`);
+- ``.Wanted().getImage(`<Avatar>`, `<Currency>`);``
 
 > Currency ($, €, ...)
 
@@ -173,11 +173,11 @@ bot.login("super_secret_token")
 
 ## Utils
 
-- .Circle().getImage(`<Avatar>`);
+- ``.Circle().getImage(`<Avatar>`);``
 
 ![Circle](https://imgur.com/0Zo8NYS.png)
 
-- .Color().getImage(`<Color>`);
+- ``.Color().getImage(`<Color>`);``
 
 > An hex color is needed, like "#FF0000"
 
