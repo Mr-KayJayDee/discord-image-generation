@@ -32,7 +32,6 @@ module.exports = class Blink {
         ctx2.drawImage(base, 0, 0, 480, 480);
         GIF.addFrame(ctx2)
         GIF.finish();
-        console.log(GIF.out.getData())
         return GIF.out.getData();
     }
 }
