@@ -42,6 +42,7 @@ const Discord = require("discord.js")
 const bot = new Discord.Client()
 
 const DIG = require("discord-image-generation");
+> You can also destructure to avoid repeating DIG.
 
 // Listen to the ready event
 bot.on("ready", () => {
@@ -54,7 +55,7 @@ bot.on("message", async (message) => {
         // Get the avatarUrl of the user
         let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
         // Make the image
-        let img = await new DIG.delete().getImage(avatar)
+        let img = await new DIG.Delete().getImage(avatar)
         // Add the image as an attachement
         let attach = new Discord.MessageAttachment(img, "delete.png");;
         message.channel.send(attach)
@@ -70,101 +71,101 @@ bot.login("super_secret_token")
 
 ## Filters
 
-- ``new Blur().getImage(`<Avatar>`, `<Level(Number)>`);``
+- ``new DIG.Blur().getImage(`<Avatar>`, `<Level(Number)>`);``
 
 ![Blur](https://imgur.com/JqpNFTY.png)
 
-- ``new Gay().getImage(`<Avatar>`);``
+- ``new DIG.Gay().getImage(`<Avatar>`);``
 
 ![Gay](https://imgur.com/BDTrXzZ.png)
 
-- ``new Greyscale().getImage(`<Avatar>`);``
+- ``new DIG.Greyscale().getImage(`<Avatar>`);``
 
 ![Greyscale](https://imgur.com/h3ahY7Z.png)
 
-- ``new Invert().getImage(`<Avatar>`);``
+- ``new DIG.Invert().getImage(`<Avatar>`);``
 
 ![Invert](https://imgur.com/Rl0wGQM.png)
 
-- ``new Sepia().getImage(`<Avatar>`);``
+- ``new DIG.Sepia().getImage(`<Avatar>`);``
 
 ![Sepia](https://imgur.com/OTbKVtj.png)
 
 
 ## Gifs
 
-- ``new Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
+- ``new DIG.Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
-- ``new Triggered().getImage(`<Avatar>`);``
+- ``new DIG.Triggered().getImage(`<Avatar>`);``
 
 ![Triggered](https://imgur.com/0QvyYQa.gif)
 
 
 ## Montage
 
-- ``new Affect().getImage(`<Avatar>`);``
+- ``new DIG.Affect().getImage(`<Avatar>`);``
 
 ![Affect](https://imgur.com/g4Gaehb.png)
 
-- ``new Batslap().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new DIG.Batslap().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Batslap](https://imgur.com/oYMpa5A.png)
 
-- ``new Beautiful().getImage(`<Avatar>`);``
+- ``new DIG.Beautiful().getImage(`<Avatar>`);``
 
 ![Beautiful](https://imgur.com/HGZkmXo.png)
 
-- ``new Bed().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new DIG.Bed().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Bed](https://imgur.com/b1idSnr.png)
 
-- ``new Delete().getImage(`<Avatar>`);``
+- ``new DIG.Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
 
-- ``new Facepalm().getImage(`<Avatar>`);``
+- ``new DIG.Facepalm().getImage(`<Avatar>`);``
 
 ![Facepalm](https://imgur.com/cdPC3P1.png)
 
-- ``new Hitler().getImage(`<Avatar>`);``
+- ``new DIG.Hitler().getImage(`<Avatar>`);``
 
 ![Hitler](https://imgur.com/wK9puxH.png)
 
-- ``new Jail().getImage(`<Avatar>`);``
+- ``new DIG.Jail().getImage(`<Avatar>`);``
 
 ![Jail](https://imgur.com/QslACNo.png)
 
-- ``new Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new DIG.Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
 
-- ``new Mms().getImage(`<Avatar>`);``
+- ``new DIG.Mms().getImage(`<Avatar>`);``
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
-- ``new Rip().getImage(`<Avatar>`);``
+- ``new DIG.Rip().getImage(`<Avatar>`);``
 
 ![RIP](https://imgur.com/MgsRH8o.png)
 
-- ``new Spank().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new DIG.Spank().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Spank](https://imgur.com/VRvogo7.png)
 
-- ``new Tatoo().getImage(`<Avatar>`)``
+- ``new DIG.Tatoo().getImage(`<Avatar>`)``
 
 ![Tatoo](https://imgur.com/wJju4UJ.png)
 
-- ``new Thomas().getImage(`<Avatar>`);``
+- ``new DIG.Thomas().getImage(`<Avatar>`);``
 
 ![Thomas](https://imgur.com/7R37J2j.png)
 
-- ``new Trash().getImage(`<Avatar>`);``
+- ``new DIG.Trash().getImage(`<Avatar>`);``
 
 ![Trash](https://imgur.com/nwAHGgF.png)
 
-- ``new Wanted().getImage(`<Avatar>`, `<Currency>`);``
+- ``new DIG.Wanted().getImage(`<Avatar>`, `<Currency>`);``
 
 > Currency ($, €, ...)
 
@@ -173,11 +174,11 @@ bot.login("super_secret_token")
 
 ## Utils
 
-- ``new Circle().getImage(`<Avatar>`);``
+- ``new DIG.Circle().getImage(`<Avatar>`);``
 
 ![Circle](https://imgur.com/0Zo8NYS.png)
 
-- ``new Color().getImage(`<Color>`);``
+- ``new DIG.Color().getImage(`<Color>`);``
 
 > An hex color is needed, like "#FF0000"
 
