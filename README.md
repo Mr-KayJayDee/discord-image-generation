@@ -51,10 +51,10 @@ bot.on("ready", () => {
 // Listen to the message event
 bot.on("message", async (message) => {
     if (message.content === "*delete") {
-    	// Get the avatarUrl of the user
+        // Get the avatarUrl of the user
         let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
         // Make the image
-        let img = await DIG.delete().getImage(avatar)
+        let img = await new DIG.delete().getImage(avatar)
         // Add the image as an attachement
         let attach = new Discord.MessageAttachment(img, "delete.png");;
         message.channel.send(attach)
@@ -70,101 +70,101 @@ bot.login("super_secret_token")
 
 ## Filters
 
-- ``.Blur().getImage(`<Avatar>`, `<Level(Number)>`);``
+- ``new Blur().getImage(`<Avatar>`, `<Level(Number)>`);``
 
 ![Blur](https://imgur.com/JqpNFTY.png)
 
-- ``.Gay().getImage(`<Avatar>`);``
+- ``new Gay().getImage(`<Avatar>`);``
 
 ![Gay](https://imgur.com/BDTrXzZ.png)
 
-- ``.Greyscale().getImage(`<Avatar>`);``
+- ``new Greyscale().getImage(`<Avatar>`);``
 
 ![Greyscale](https://imgur.com/h3ahY7Z.png)
 
-- ``.Invert().getImage(`<Avatar>`);``
+- ``new Invert().getImage(`<Avatar>`);``
 
 ![Invert](https://imgur.com/Rl0wGQM.png)
 
-- ``.Sepia().getImage(`<Avatar>`);``
+- ``new Sepia().getImage(`<Avatar>`);``
 
 ![Sepia](https://imgur.com/OTbKVtj.png)
 
 
 ## Gifs
 
-- ``.Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
+- ``new Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
-- ``.Triggered().getImage(`<Avatar>`);``
+- ``new Triggered().getImage(`<Avatar>`);``
 
 ![Triggered](https://imgur.com/0QvyYQa.gif)
 
 
 ## Montage
 
-- ``.Affect().getImage(`<Avatar>`);``
+- ``new Affect().getImage(`<Avatar>`);``
 
 ![Affect](https://imgur.com/g4Gaehb.png)
 
-- ``.Batslap().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new Batslap().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Batslap](https://imgur.com/oYMpa5A.png)
 
-- ``.Beautiful().getImage(`<Avatar>`);``
+- ``new Beautiful().getImage(`<Avatar>`);``
 
 ![Beautiful](https://imgur.com/HGZkmXo.png)
 
-- ``.Bed().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new Bed().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Bed](https://imgur.com/b1idSnr.png)
 
-- ``.Delete().getImage(`<Avatar>`);``
+- ``new Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
 
-- ``.Facepalm().getImage(`<Avatar>`);``
+- ``new Facepalm().getImage(`<Avatar>`);``
 
 ![Facepalm](https://imgur.com/cdPC3P1.png)
 
-- ``.Hitler().getImage(`<Avatar>`);``
+- ``new Hitler().getImage(`<Avatar>`);``
 
 ![Hitler](https://imgur.com/wK9puxH.png)
 
-- ``.Jail().getImage(`<Avatar>`);``
+- ``new Jail().getImage(`<Avatar>`);``
 
 ![Jail](https://imgur.com/QslACNo.png)
 
-- ``.Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
 
-- ``.Mms().getImage(`<Avatar>`);``
+- ``new Mms().getImage(`<Avatar>`);``
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
-- ``.Rip().getImage(`<Avatar>`);``
+- ``new Rip().getImage(`<Avatar>`);``
 
 ![RIP](https://imgur.com/MgsRH8o.png)
 
-- ``.Spank().getImage(`<Avatar>`, `<Avatar2>`);``
+- ``new Spank().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Spank](https://imgur.com/VRvogo7.png)
 
-- ``.Tatoo().getImage(`<Avatar>`)``
+- ``new Tatoo().getImage(`<Avatar>`)``
 
 ![Tatoo](https://imgur.com/wJju4UJ.png)
 
-- ``.Thomas().getImage(`<Avatar>`);``
+- ``new Thomas().getImage(`<Avatar>`);``
 
 ![Thomas](https://imgur.com/7R37J2j.png)
 
-- ``.Trash().getImage(`<Avatar>`);``
+- ``new Trash().getImage(`<Avatar>`);``
 
 ![Trash](https://imgur.com/nwAHGgF.png)
 
-- ``.Wanted().getImage(`<Avatar>`, `<Currency>`);``
+- ``new Wanted().getImage(`<Avatar>`, `<Currency>`);``
 
 > Currency ($, €, ...)
 
@@ -173,11 +173,11 @@ bot.login("super_secret_token")
 
 ## Utils
 
-- ``.Circle().getImage(`<Avatar>`);``
+- ``new Circle().getImage(`<Avatar>`);``
 
 ![Circle](https://imgur.com/0Zo8NYS.png)
 
-- ``.Color().getImage(`<Color>`);``
+- ``new Color().getImage(`<Color>`);``
 
 > An hex color is needed, like "#FF0000"
 
@@ -189,9 +189,9 @@ bot.login("super_secret_token")
 - Changed the full structure
     - Sorted all files in folders
     - Sorted all files in the README
-- Fixed .wanted() text bug
-- Added .blink()
-- Added a timeout options for .triggered()
+- Fixed new Wanted() text bug
+- Added new Blink()
+- Added a timeout options for new Triggered()
 - Fixed the triggered example not animated
 - Added some keywords
 - Bumped jimp from ^0.12.1 to ^0.13.0
