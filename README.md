@@ -93,7 +93,7 @@ bot.login("super_secret_token")
 
 ## Gifs
 
-- ``.Blink().getImage()``
+- ``.Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
