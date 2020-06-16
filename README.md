@@ -186,6 +186,10 @@ bot.login("super_secret_token")
 
 # Changelog 
 
+## v1.1.2
+- Fixed invalid path
+- Moved assets folder 
+
 ## v1.0.0
 - Changed the full structure
     - Sorted all files in folders

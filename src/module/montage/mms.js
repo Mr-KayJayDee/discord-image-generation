@@ -7,7 +7,7 @@ module.exports = class Mms {
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
-        let bg = await Canvas.loadImage(`../src/module/assets/mms.png`);
+        let bg = await Canvas.loadImage(`../src/assets/mms.png`);
         let img = await Canvas.loadImage(image);
         const canvas = Canvas.createCanvas(400, 400);
         const ctx = canvas.getContext(`2d`);

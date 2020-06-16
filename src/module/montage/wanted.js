@@ -16,7 +16,7 @@ module.exports = class Wanted {
         const canvas = Canvas.createCanvas(257, 383);
         const ctx = canvas.getContext(`2d`);
         const avatar = await Canvas.loadImage(image);
-        const background = await Canvas.loadImage(`../src/module/assets/wanted.png`);
+        const background = await Canvas.loadImage(`../src/assets/wanted.png`);
         ctx.drawImage(avatar, 25, 60, 210, 210);
         ctx.drawImage(background, 0, 0, 257, 383);
         ctx.font = applyText(canvas, price.toLocaleString() + currency, 40, 200, "Times New Roman");

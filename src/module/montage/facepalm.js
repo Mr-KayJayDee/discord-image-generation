@@ -13,7 +13,7 @@ module.exports = class Facepalm {
         ctx.fillRect(0, 0, 632, 357);
         let avatar = await Canvas.loadImage(image);
         ctx.drawImage(avatar, 199, 112, 235, 235);
-        let layer = await Canvas.loadImage(`../src/module/assets/facepalm.png`);
+        let layer = await Canvas.loadImage(`../src/assets/facepalm.png`);
         ctx.drawImage(layer, 0, 0, 632, 357);
         return canvas.toBuffer();
     }

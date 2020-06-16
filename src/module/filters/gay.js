@@ -7,7 +7,7 @@ module.exports = class Gay {
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
-        let bg = await Canvas.loadImage(`../src/module/assets/gay.png`);
+        let bg = await Canvas.loadImage(`../src/assets/gay.png`);
         let img = await Canvas.loadImage(image);
         const canvas = Canvas.createCanvas(480, 480);
         const ctx = canvas.getContext(`2d`);

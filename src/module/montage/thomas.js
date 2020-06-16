@@ -10,7 +10,7 @@ module.exports = class Thomas {
         const canvas = Canvas.createCanvas(841, 1058);
         const ctx = canvas.getContext(`2d`);
         const avatar = await Canvas.loadImage(image);
-        const background = await Canvas.loadImage(`../src/module/assets/thomas.png`);
+        const background = await Canvas.loadImage(`../src/assets/thomas.png`);
         ctx.drawImage(avatar, 220, 190, 400, 400);
         ctx.drawImage(background, 0, 0, 841, 1058);
         return canvas.toBuffer();

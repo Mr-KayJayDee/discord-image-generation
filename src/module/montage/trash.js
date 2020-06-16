@@ -7,7 +7,7 @@ module.exports = class Trash {
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
-        let bg = await jimp.read(`../src/module/assets/trash.png`);
+        let bg = await jimp.read(`../src/assets/trash.png`);
         image = await jimp.read(image);
         image.resize(309, 309);
         image.blur(5);

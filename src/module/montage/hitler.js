@@ -7,7 +7,7 @@ module.exports = class Hitler {
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
-        let bg = await jimp.read(`../src/module/assets/hitler.png`);
+        let bg = await jimp.read(`../src/assets/hitler.png`);
         let img = await jimp.read(image);
         img.resize(140, 140);
         bg.composite(img, 46, 43);
