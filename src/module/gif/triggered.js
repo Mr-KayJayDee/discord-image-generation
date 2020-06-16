@@ -11,7 +11,7 @@ module.exports = class Triggered {
     async getImage(image, timeout = 15) {
         if (!image) throw new Error(`You must provide an image.`);
         if (isNaN(timeout)) throw new Error(`The timeout argument must be a number.`)
-        const base = await Canvas.loadImage(`../src/assets/triggered.png`);
+        const base = await Canvas.loadImage(`${__dirname}/../../assets/triggered.png`);
         const img = await Canvas.loadImage(image);
         const GIF = new GIFEncoder(256, 310)
         GIF.start();

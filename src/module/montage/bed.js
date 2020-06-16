@@ -9,7 +9,7 @@ module.exports = class Bed {
     async getImage(image1, image2) {
         if (!image1) throw new Error(`You must provide an image as a first argument.`);
         if (!image2) throw new Error(`You must provide an image as a second argument.`);
-        let bg = await jimp.read(`../src/assets/bed.png`);
+        let bg = await jimp.read(`${__dirname}/../../assets/bed.png`);
         image1 = await jimp.read(image1);
         image2 = await jimp.read(image2);
         image1.circle();

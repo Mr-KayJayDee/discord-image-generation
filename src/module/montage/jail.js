@@ -7,7 +7,7 @@ module.exports = class Jail {
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
-        let bg = await Canvas.loadImage(`../src/assets/jail.png`);
+        let bg = await Canvas.loadImage(`${__dirname}/../../assets/jail.png`);
         let img = await Canvas.loadImage(image);
         const canvas = Canvas.createCanvas(400, 400);
         const ctx = canvas.getContext(`2d`);
