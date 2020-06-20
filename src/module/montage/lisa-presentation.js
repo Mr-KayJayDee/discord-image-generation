@@ -1,7 +1,7 @@
 const { createCanvas, loadImage, registerFont } = require('canvas');
-registerFont(path.join(__dirname, '..', '..', 'assets', 'fonts', 'Noto-Regular.ttf'), { family: 'Noto' });
-registerFont(path.join(__dirname, '..', '..', 'assets', 'fonts', 'Noto-CJK.otf'), { family: 'Noto' });
-registerFont(path.join(__dirname, '..', '..', 'assets', 'fonts', 'Noto-Emoji.ttf'), { family: 'Noto' });
+registerFont(`${__dirname}/../../assets/fonts/Noto-Regular.ttf`, { family: 'Noto' });
+registerFont(`${__dirname}/../../assets/fonts/Noto-CJK.otf`, { family: 'Noto' });
+registerFont(`${__dirname}/../../assets/fonts/Noto-Emoji.ttf`, { family: 'Noto' });
 
 function wrapText(ctx, text, maxWidth) {
 	return new Promise(resolve => {
