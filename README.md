@@ -147,6 +147,8 @@ bot.login("super_secret_token")
 
 - ``new DIG.LisaPresentation().getImage(`<Text>`);``
 
+(Thanks to sιмση ℓεcℓεяε#5765)
+
 > Limited to 300char
 
 ![MMS](https://imgur.com/nH3URHb.png)
