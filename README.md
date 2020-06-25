@@ -143,7 +143,7 @@ bot.login("super_secret_token")
 
 - ``new DIG.Mms().getImage(`<Avatar>`);``
 
-![LisaPresentation](https://imgur.com/u5cPVVW)
+![LisaPresentation](https://imgur.com/u5cPVVW.png)
 
 - ``new DIG.LisaPresentation().getImage(`<Text>`);``
 
