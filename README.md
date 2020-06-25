@@ -141,15 +141,14 @@ bot.login("super_secret_token")
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
 
-- ``new DIG.Mms().getImage(`<Avatar>`);``
-
 ![LisaPresentation](https://imgur.com/u5cPVVW.png)
 
 - ``new DIG.LisaPresentation().getImage(`<Text>`);``
 
-(Thanks to sιмση ℓεcℓεяε#5765)
-
 > Limited to 300char
+
+(Thanks to sιмση ℓεcℓεяε#5765)
+- ``new DIG.Mms().getImage(`<Avatar>`);``
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
