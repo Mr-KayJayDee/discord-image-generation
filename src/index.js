@@ -16,6 +16,7 @@ Facepalm = require('./module/montage/facepalm')
 Hitler = require('./module/montage/hitler')
 Jail = require('./module/montage/jail')
 Kiss = require('./module/montage/kiss')
+LisaPresentation = require('./module/montage/lisa-presentation')
 Mms = require('./module/montage/mms')
 Rip = require('./module/montage/rip')
 Spank = require('./module/montage/spank')
@@ -44,6 +45,7 @@ module.exports = {
     Hitler,
     Jail,
     Kiss,
+    LisaPresentation,
     Mms,
     Rip,
     Spank,

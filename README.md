@@ -143,6 +143,12 @@ bot.login("super_secret_token")
 
 - ``new DIG.Mms().getImage(`<Avatar>`);``
 
+![LisaPresentation](https://imgur.com/u5cPVVW)
+
+- ``new DIG.LisaPresentation().getImage(`<Text>`);``
+
+> Limited to 300char
+
 ![MMS](https://imgur.com/nH3URHb.png)
 
 - ``new DIG.Rip().getImage(`<Avatar>`);``
@@ -185,6 +191,9 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.1.5
+- Added LisaPresentation
 
 ## v1.1.2
 - Fixed invalid path
