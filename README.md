@@ -141,9 +141,9 @@ bot.login("super_secret_token")
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
 
-![LisaPresentation](https://imgur.com/u5cPVVW.png)
-
 - ``new DIG.LisaPresentation().getImage(`<Text>`);``
+
+![LisaPresentation](https://imgur.com/u5cPVVW.png)
 
 > Limited to 300char
 
