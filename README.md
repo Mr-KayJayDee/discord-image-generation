@@ -105,6 +105,10 @@ bot.login("super_secret_token")
 
 ## Montage
 
+- ``new DIG.Ad().getImage(`<Avatar>`);``
+
+![Ad](https://imgur.com/H7FvUtZ.png)
+
 - ``new DIG.Affect().getImage(`<Avatar>`);``
 
 ![Affect](https://imgur.com/g4Gaehb.png)
@@ -152,6 +156,14 @@ bot.login("super_secret_token")
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
+- ``new DIG.Podium().getImage(`<Avatar1>, <Avatar2>, <Avatar2>, <Name1>, <Name2>, <Name3>`);``
+
+![Podium](https://imgur.com/bQoKf0a.png)
+
+- ``new DIG.Poutine().getImage(`<Avatar>`);``
+
+![Poutine](https://imgur.com/UpQJHzM.png)
+
 - ``new DIG.Rip().getImage(`<Avatar>`);``
 
 ![RIP](https://imgur.com/MgsRH8o.png)
@@ -176,7 +188,7 @@ bot.login("super_secret_token")
 
 > Currency ($, €, ...)
 
-![Wanted](https://imgur.com/SFGRvSK.png)
+![Wanted](https://imgur.com/NJfzJeN.png)
 
 
 ## Utils
@@ -192,6 +204,13 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.2.9
+- Added Podium()
+- Added Ad()
+- Added Poutine()
+- Fixed Wanted()
+- Bumped jimp from ^0.13.0 to ^0.14.0
 
 ## v1.1.5
 - Added LisaPresentation

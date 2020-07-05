@@ -7,6 +7,7 @@ Sepia = require('./module/filters/sepia')
 Triggered = require('./module/gif/triggered')
 Blink = require('./module/gif/blink')
 
+Ad = require('./module/montage/ad')
 Affect = require('./module/montage/affect')
 Batslap = require('./module/montage/batslap')
 Beautiful = require('./module/montage/beautiful')
@@ -18,6 +19,8 @@ Jail = require('./module/montage/jail')
 Kiss = require('./module/montage/kiss')
 LisaPresentation = require('./module/montage/lisa-presentation')
 Mms = require('./module/montage/mms')
+Podium = require('./module/montage/podium')
+Poutine = require('./module/montage/poutine')
 Rip = require('./module/montage/rip')
 Spank = require('./module/montage/spank')
 Tatoo = require('./module/montage/tatoo')
@@ -36,6 +39,7 @@ module.exports = {
     Sepia,
     Triggered,
     Blink,
+    Ad,
     Affect,
     Batslap,
     Beautiful,
@@ -47,6 +51,8 @@ module.exports = {
     Kiss,
     LisaPresentation,
     Mms,
+    Podium,
+    Poutine,
     Rip,
     Spank,
     Tatoo,

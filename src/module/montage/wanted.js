@@ -19,9 +19,10 @@ module.exports = class Wanted {
         const background = await Canvas.loadImage(`${__dirname}/../../assets/wanted.png`);
         ctx.drawImage(avatar, 25, 60, 210, 210);
         ctx.drawImage(background, 0, 0, 257, 383);
-        ctx.font = applyText(canvas, price.toLocaleString() + currency, 40, 200, "Times New Roman");
+        ctx.textAlign = 'center';
+        ctx.font = applyText(canvas, price.toLocaleString() + currency, 80, 200, "Times New Roman");
         ctx.fillStyle = `#513d34`
-        ctx.fillText(price.toLocaleString() + currency, 54, 320)
+        ctx.fillText(price.toLocaleString() + currency, 128, 315)
         return canvas.toBuffer();
     }
 }
