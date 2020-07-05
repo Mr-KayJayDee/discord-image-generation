@@ -1,7 +1,5 @@
 <a href="https://nodei.co/npm/discord-image-generation/"><img src="https://nodei.co/npm/discord-image-generation.png?downloads=true&downloadRank=true&stars=true"></a>
 
-<a href="https://discord.gg/qvzwqaM"><img src="https://discord.com/api/guilds/661897530459684865/widget.png" alt="Discord server"/></a>
-
 # discord-image-generation
 
 A powerfull module that allow you to generate awesome images.
@@ -16,6 +14,12 @@ A correct and understandable issue contains :
 - The complete error
 
 You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.</a>
+
+#### My coding discord server 
+<a href="https://discord.gg/qvzwqaM"><img src="https://discord.com/api/guilds/661897530459684865/widget.png" alt="Discord server"/></a>
+
+#### My discord bot support server
+<a href="https://discord.gg/Uqd2sQP"><img src="https://discord.com/api/guilds/527836578912010251/widget.png" alt="Amandine support server"/></a>
 
 # Download
 
