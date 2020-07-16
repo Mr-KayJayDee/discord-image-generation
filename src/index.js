@@ -1,64 +1,15 @@
-Blur = require('./module/filters/blur')
-Gay = require('./module/filters/gay')
-Greyscale = require('./module/filters/greyscale')
-Invert = require('./module/filters/invert')
-Sepia = require('./module/filters/sepia')
+const { readdirSync } = require("fs");
+const { join } = require("path");
 
-Triggered = require('./module/gif/triggered')
-Blink = require('./module/gif/blink')
-
-Ad = require('./module/montage/ad')
-Affect = require('./module/montage/affect')
-Batslap = require('./module/montage/batslap')
-Beautiful = require('./module/montage/beautiful')
-Bed = require('./module/montage/bed')
-Delete = require('./module/montage/delete')
-Facepalm = require('./module/montage/facepalm')
-Hitler = require('./module/montage/hitler')
-Jail = require('./module/montage/jail')
-Kiss = require('./module/montage/kiss')
-LisaPresentation = require('./module/montage/lisa-presentation')
-Mms = require('./module/montage/mms')
-Podium = require('./module/montage/podium')
-Poutine = require('./module/montage/poutine')
-Rip = require('./module/montage/rip')
-Spank = require('./module/montage/spank')
-Tatoo = require('./module/montage/tatoo')
-Thomas = require('./module/montage/thomas')
-Trash = require('./module/montage/trash')
-Wanted = require('./module/montage/wanted')
-
-Circle = require('./module/utils/circle')
-Color = require('./module/utils/color')
-
-module.exports = {
-    Blur,
-    Gay,
-    Greyscale,
-    Invert,
-    Sepia,
-    Triggered,
-    Blink,
-    Ad,
-    Affect,
-    Batslap,
-    Beautiful,
-    Bed,
-    Delete,
-    Facepalm,
-    Hitler,
-    Jail,
-    Kiss,
-    LisaPresentation,
-    Mms,
-    Podium,
-    Poutine,
-    Rip,
-    Spank,
-    Tatoo,
-    Thomas,
-    Trash,
-    Wanted,
-    Circle,
-    Color,
+for (let type of readdirSync(join(__dirname, "module")).filter(
+  f => !f.includes(".")
+)) {
+  readdirSync(join(__dirname, "module", type))
+    .filter(file => file !== "index.js" && file.endsWith(".js"))
+    .map(File => {
+      const Name = File.split(".")[0];
+      exports[
+        Name.charAt(0).toUpperCase() + Name.slice(1)
+      ] = require(`${__dirname}/module/${type}/${File}`);
+    });
 }
