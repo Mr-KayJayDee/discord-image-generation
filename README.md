@@ -209,6 +209,9 @@ bot.login("super_secret_token")
 
 # Changelog 
 
+## v1.2.12
+- Optimized src/index.js (thanks to https://github.com/Pyrojs)
+
 ## v1.2.9
 - Added Podium()
 - Added Ad()
