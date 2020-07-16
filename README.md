@@ -129,6 +129,10 @@ bot.login("super_secret_token")
 
 ![Bed](https://imgur.com/b1idSnr.png)
 
+- ``new DIG.ConfusedStonk().getImage(`<Avatar>`);``
+
+![ConfusedStonk](https://imgur.com/b4UB3BE.png)
+
 - ``new DIG.Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
