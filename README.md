@@ -160,6 +160,10 @@ bot.login("super_secret_token")
 
 ![MMS](https://imgur.com/nH3URHb.png)
 
+- ``new DIG.NotStonk().getImage(`<Avatar>`);``
+
+![NotStonk](https://imgur.com/NJ2Svtj.png)
+
 - ``new DIG.Podium().getImage(`<Avatar1>, <Avatar2>, <Avatar2>, <Name1>, <Name2>, <Name3>`);``
 
 ![Podium](https://imgur.com/bQoKf0a.png)
