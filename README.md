@@ -133,6 +133,10 @@ bot.login("super_secret_token")
 
 ![Delete](https://imgur.com/6V1IYJp.png)
 
+- ``new DIG.DoubleStonk().getImage(`<Avatar`, `<Avatar2>`)``
+
+![DoubleStonk](https://imgur.com/HbuuUC6.png)
+
 - ``new DIG.Facepalm().getImage(`<Avatar>`);``
 
 ![Facepalm](https://imgur.com/cdPC3P1.png)
