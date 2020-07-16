@@ -225,6 +225,12 @@ bot.login("super_secret_token")
 
 # Changelog 
 
+## v1.3.2
+- Added Stonk()
+- Added NotStonk()
+- Added DoubleStonk()
+- Added ConfusedStonk()
+
 ## v1.2.12
 - Optimized src/index.js (thanks to https://github.com/Pyrojs)
 
