@@ -176,6 +176,10 @@ bot.login("super_secret_token")
 
 ![Spank](https://imgur.com/VRvogo7.png)
 
+- ``new DIG.Stonk().getImage(`<Avatar>`);``
+
+![Stonk](https://imgur.com/oAVgevR.png)
+
 - ``new DIG.Tatoo().getImage(`<Avatar>`)``
 
 ![Tatoo](https://imgur.com/wJju4UJ.png)
