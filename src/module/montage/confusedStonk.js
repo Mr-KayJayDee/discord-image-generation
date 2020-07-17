@@ -11,7 +11,7 @@ module.exports = class ConfusedStonk {
         const ctx = canvas.getContext(`2d`);
         image1 = await Canvas.loadImage(image1);
         const background = await Canvas.loadImage(`${__dirname}/../../assets/confusedStonk.png`);
-        ctx.drawImage(image1, 230, 75, 400, 400);
+        ctx.drawImage(image1, 190, 70, 400, 400);
         ctx.drawImage(background, 0, 0, 1994, 1296);
         return canvas.toBuffer();
     }
