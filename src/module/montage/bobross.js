@@ -1,6 +1,6 @@
 const { createCanvas, loadImage } = require("canvas");
 
-class Bobross {
+module.exports = class Bobross {
   /**
    * Bobross
    * @param {image} image1
