@@ -129,6 +129,10 @@ bot.login("super_secret_token")
 
 ![Bed](https://imgur.com/b1idSnr.png)
 
+- ``new DIG.Bobross().getImage(`<Avatar>`);``
+
+![Bobross](https://imgur.com/lATDohK.png)
+
 - ``new DIG.ConfusedStonk().getImage(`<Avatar>`);``
 
 ![ConfusedStonk](https://imgur.com/b4UB3BE.png)
@@ -224,6 +228,9 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.3.4
+- Added bobross()
 
 ## v1.3.2
 - Added Stonk()
