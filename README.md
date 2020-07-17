@@ -133,6 +133,10 @@ bot.login("super_secret_token")
 
 ![ConfusedStonk](https://imgur.com/b4UB3BE.png)
 
+- ``new DIG.Bobross().getImage(`<Avatar>`);``
+
+![Bobross](https://imgur.com/MmYnBYf.png)
+
 - ``new DIG.Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
