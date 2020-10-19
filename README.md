@@ -13,12 +13,8 @@ A correct and understandable issue contains :
 - Code that summonned the error
 - The complete error
 
-You can also join me on my <a href="https://discord.gg/qvzwqaM">discord server.</a>
+You can also join me on my <a href="https://discord.gg/Uqd2sQP">discord server.</a>
 
-#### My coding discord server 
-<a href="https://discord.gg/qvzwqaM"><img src="https://discord.com/api/guilds/661897530459684865/widget.png" alt="Discord server"/></a>
-
-#### My discord bot support server
 <a href="https://discord.gg/Uqd2sQP"><img src="https://discord.com/api/guilds/527836578912010251/widget.png" alt="Amandine support server"/></a>
 
 # Download
@@ -228,6 +224,10 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.3.9
+- Edited links in README
+- Bumped jimp from 0.14.0 to 0.16.1
 
 ## v1.3.8
 - Edited the Rip() image
