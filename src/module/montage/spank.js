@@ -14,6 +14,8 @@ module.exports = class Spank {
         image2 = await jimp.read(image2);
         image1.circle();
         image2.circle();
+        image1.greyscale();
+        image2.greyscale();
         bg.resize(500, 500);
         image1.resize(140, 140);
         image2.resize(120, 120);

@@ -186,11 +186,11 @@ bot.login("super_secret_token")
 
 - ``new DIG.Rip().getImage(`<Avatar>`);``
 
-![RIP](https://imgur.com/MgsRH8o.png)
+![RIP](https://imgur.com/qhyZKfz.png)
 
 - ``new DIG.Spank().getImage(`<Avatar>`, `<Avatar2>`);``
 
-![Spank](https://imgur.com/VRvogo7.png)
+![Spank](https://imgur.com/25gq0es.png)
 
 - ``new DIG.Stonk().getImage(`<Avatar>`);``
 
@@ -228,6 +228,10 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.3.8
+- Edited the Rip() image
+- Fixed the Spank() colors
 
 ## v1.3.4
 - Added bobross()
