@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class Hitler {
     /**
@@ -17,4 +17,4 @@ module.exports = class Hitler {
         });
         return raw;
     }
-}
+};

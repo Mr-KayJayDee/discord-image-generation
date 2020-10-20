@@ -1,7 +1,7 @@
-const Canvas = require("canvas");
-const { 
-    applyText 
-} = require("../functions")
+const Canvas = require(`canvas`);
+const {
+    applyText
+} = require(`../functions`);
 
 module.exports = class Podium {
     /**
@@ -34,26 +34,26 @@ module.exports = class Podium {
         if (name1.length > 5) maxWidth = 150;
         if (name1.length > 10) maxWidth = 250;
         if (name1.length > 20) maxWidth = 350;
-        ctx.textAlign = 'center';
-        ctx.font = applyText(canvas, name1, 80, maxWidth, "Comic Sans MS");
+        ctx.textAlign = `center`;
+        ctx.font = applyText(canvas, name1, 80, maxWidth, `Comic Sans MS`);
         ctx.fillStyle = `#513d34`;
         ctx.fillText(name1, 580, 575);
         maxWidth = 80;
         if (name2.length > 5) maxWidth = 150;
         if (name2.length > 10) maxWidth = 180;
         if (name2.length > 20) maxWidth = 240;
-        ctx.textAlign = 'center';
-        ctx.font = applyText(canvas, name2, 50, maxWidth, "Comic Sans MS");
+        ctx.textAlign = `center`;
+        ctx.font = applyText(canvas, name2, 50, maxWidth, `Comic Sans MS`);
         ctx.fillStyle = `#513d34`;
         ctx.fillText(name2, 210, 540);
         maxWidth = 80;
         if (name3.length > 5) maxWidth = 150;
         if (name3.length > 10) maxWidth = 180;
         if (name3.length > 20) maxWidth = 240;
-        ctx.textAlign = 'center';
-        ctx.font = applyText(canvas, name3, 50, maxWidth, "Comic Sans MS");
+        ctx.textAlign = `center`;
+        ctx.font = applyText(canvas, name3, 50, maxWidth, `Comic Sans MS`);
         ctx.fillStyle = `#513d34`;
         ctx.fillText(name3, 970, 540);
         return canvas.toBuffer();
     }
-}
+};

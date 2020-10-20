@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class ConfusedStonk {
     /**
@@ -15,4 +15,4 @@ module.exports = class ConfusedStonk {
         ctx.drawImage(background, 0, 0, 1994, 1296);
         return canvas.toBuffer();
     }
-}
+};

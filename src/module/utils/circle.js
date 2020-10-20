@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class Circle {
     /**
@@ -16,4 +16,4 @@ module.exports = class Circle {
         });
         return raw;
     }
-}
+};

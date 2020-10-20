@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class Geryscale {
     /**
@@ -8,7 +8,7 @@ module.exports = class Geryscale {
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image.`);
         image = await jimp.read(image);
-        image.resize(480, 480)
+        image.resize(480, 480);
         image.greyscale();
         let raw;
         image.getBuffer(`image/png`, (err, buffer) => {
@@ -16,4 +16,4 @@ module.exports = class Geryscale {
         });
         return raw;
     }
-}
+};

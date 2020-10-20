@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Stonk {
     /**
@@ -15,4 +15,4 @@ module.exports = class Stonk {
         ctx.drawImage(background, 0, 0, 900, 539);
         return canvas.toBuffer();
     }
-}
+};

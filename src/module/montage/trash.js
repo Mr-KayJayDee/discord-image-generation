@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class Trash {
     /**
@@ -18,4 +18,4 @@ module.exports = class Trash {
         });
         return raw;
     }
-}
+};

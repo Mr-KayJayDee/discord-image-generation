@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class DoubleStonk {
     /**
@@ -7,8 +7,8 @@ module.exports = class DoubleStonk {
      * @param {image} image2 
      */
     async getImage(image1, image2) {
-        if (!image1) throw new Error("You must provide an image as a first argument.");
-        if (!image2) throw new Error("You must provide an image as a second argument.");
+        if (!image1) throw new Error(`You must provide an image as a first argument.`);
+        if (!image2) throw new Error(`You must provide an image as a second argument.`);
         let base = await jimp.read(`${__dirname}/../../assets/doubleStonk.png`);
         image1 = await jimp.read(image1);
         image2 = await jimp.read(image2);
@@ -20,9 +20,9 @@ module.exports = class DoubleStonk {
         base.composite(image2, 60, 20);
         base.composite(image1, 0, 30);
         let raw;
-        base.getBuffer("image/png", (err, buffer) => {
+        base.getBuffer(`image/png`, (err, buffer) => {
             raw = buffer;
         });
         return raw;
     }
-}
+};

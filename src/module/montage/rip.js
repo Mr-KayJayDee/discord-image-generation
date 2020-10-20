@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Rip {
     /**
@@ -16,4 +16,4 @@ module.exports = class Rip {
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
         return canvas.toBuffer();
     }
-}
+};

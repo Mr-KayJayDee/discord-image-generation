@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Facepalm {
     /**
@@ -6,10 +6,10 @@ module.exports = class Facepalm {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error("You must provide an image.");
+        if (!image) throw new Error(`You must provide an image.`);
         let canvas = Canvas.createCanvas(632, 357);
-        let ctx = canvas.getContext("2d");
-        ctx.fillStyle = "black";
+        let ctx = canvas.getContext(`2d`);
+        ctx.fillStyle = `black`;
         ctx.fillRect(0, 0, 632, 357);
         let avatar = await Canvas.loadImage(image);
         ctx.drawImage(avatar, 199, 112, 235, 235);
@@ -17,4 +17,4 @@ module.exports = class Facepalm {
         ctx.drawImage(layer, 0, 0, 632, 357);
         return canvas.toBuffer();
     }
-}
+};

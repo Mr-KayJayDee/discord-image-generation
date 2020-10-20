@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Gay {
     /**
@@ -15,4 +15,4 @@ module.exports = class Gay {
         ctx.drawImage(bg, 0, 0, 480, 480);
         return canvas.toBuffer();
     }
-}
+};

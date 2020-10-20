@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class NotStonk {
     /**
@@ -13,6 +13,6 @@ module.exports = class NotStonk {
         const background = await Canvas.loadImage(`${__dirname}/../../assets/notStonk.png`);
         ctx.drawImage(image1, 140, 5, 190, 190);
         ctx.drawImage(background, 0, 0, 960, 576);
-        return canvas.toBuffer();
+        return canvas.tofBuffer();
     }
-}
+};

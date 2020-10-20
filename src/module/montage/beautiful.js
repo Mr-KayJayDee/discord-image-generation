@@ -1,4 +1,4 @@
-const jimp = require("jimp");
+const jimp = require(`jimp`);
 
 module.exports = class Beautiful {
     /**
@@ -6,7 +6,7 @@ module.exports = class Beautiful {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error("You must provide an image.");
+        if (!image) throw new Error(`You must provide an image.`);
         let base = await jimp.read(`${__dirname}/../../assets/beautiful.png`);
         base.resize(376, 400);
         let img = await jimp.read(image);
@@ -14,9 +14,9 @@ module.exports = class Beautiful {
         base.composite(img, 258, 28);
         base.composite(img, 258, 229);
         let raw;
-        base.getBuffer("image/png", (err, buffer) => {
+        base.getBuffer(`image/png`, (err, buffer) => {
             raw = buffer;
         });
         return raw;
     }
-}
+};

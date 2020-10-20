@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Color {
     /**
@@ -12,4 +12,4 @@ module.exports = class Color {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         return canvas.toBuffer();
     }
-}
+};

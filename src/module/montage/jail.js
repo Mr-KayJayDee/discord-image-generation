@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Jail {
     /**
@@ -15,4 +15,4 @@ module.exports = class Jail {
         ctx.drawImage(bg, 0, 0, 400, 400);
         return canvas.toBuffer();
     }
-}
+};

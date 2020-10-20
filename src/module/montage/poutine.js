@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Poutine {
     /**
@@ -15,4 +15,4 @@ module.exports = class Poutine {
         ctx.drawImage(background, 0, 0, 600, 539);
         return canvas.toBuffer();
     }
-}
+};

@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Ad {
     /**
@@ -15,4 +15,4 @@ module.exports = class Ad {
         ctx.drawImage(background, 0, 0, 550, 474);
         return canvas.toBuffer();
     }
-}
+};

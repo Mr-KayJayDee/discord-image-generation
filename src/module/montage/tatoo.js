@@ -1,4 +1,4 @@
-const Canvas = require("canvas");
+const Canvas = require(`canvas`);
 
 module.exports = class Tatoo {
     /**
@@ -15,4 +15,4 @@ module.exports = class Tatoo {
         ctx.drawImage(background, 0, 0, 750, 1089);
         return canvas.toBuffer();
     }
-}
+};

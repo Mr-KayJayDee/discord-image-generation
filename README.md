@@ -94,7 +94,7 @@ bot.login("super_secret_token")
 
 ## Gifs
 
-- ``new DIG.Blink().getImage(`<Avatar>`, `<Avatar2>`, <Timeout (Number in ms)>)``
+- ``new DIG.Blink().getImage(`<Avatar>`, `<Avatar2>`, `<Timeout (Number in ms)>`);``
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
@@ -136,6 +136,14 @@ bot.login("super_secret_token")
 - ``new DIG.Delete().getImage(`<Avatar>`);``
 
 ![Delete](https://imgur.com/6V1IYJp.png)
+
+- ``new DIG.DiscordBlack().getImage(`<Avatar>`)``
+
+![DiscordBlack](https://imgur.com/dTX3wta.png)
+
+- ``new DIG.DiscordBlue().getImage(`<Avatar>`)``
+
+![DiscordBlue](https://imgur.com/q1bRGrx.png)
 
 - ``new DIG.DoubleStonk().getImage(`<Avatar`, `<Avatar2>`)``
 
@@ -224,6 +232,11 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.4.0
+- Added DiscordBlack() and DiscordBlue()
+- Added ESLint and fixed all problems
+- Use of the function file in LisaPresentation() instead of an in file function
 
 ## v1.3.9
 - Edited links in README
