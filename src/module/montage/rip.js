@@ -7,7 +7,7 @@ module.exports = class Rip {
      */
 
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         const canvas = Canvas.createCanvas(720, 405);
         const ctx = canvas.getContext(`2d`);
         const background = await Canvas.loadImage(`${__dirname}/../../assets/rip.png`);

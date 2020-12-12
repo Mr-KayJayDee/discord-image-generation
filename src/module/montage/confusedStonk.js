@@ -3,10 +3,10 @@ const Canvas = require(`canvas`);
 module.exports = class ConfusedStonk {
     /**
      * ConfusedStonk
-     * @param {image} image1 
+     * @param {image} image1
      */
     async getImage(image1) {
-        if (!image1) throw new Error(`You must provide an image as argument.`);
+        if (!image1) throw new Error(`You must provide an image as an argument`);
         const canvas = Canvas.createCanvas(1994, 1296);
         const ctx = canvas.getContext(`2d`);
         image1 = await Canvas.loadImage(image1);

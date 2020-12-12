@@ -6,7 +6,7 @@ module.exports = class Jail {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         let bg = await Canvas.loadImage(`${__dirname}/../../assets/jail.png`);
         let img = await Canvas.loadImage(image);
         const canvas = Canvas.createCanvas(400, 400);

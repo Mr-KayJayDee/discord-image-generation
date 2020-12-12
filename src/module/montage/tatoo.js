@@ -6,7 +6,7 @@ module.exports = class Tatoo {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         const canvas = Canvas.createCanvas(750, 1089);
         const ctx = canvas.getContext(`2d`);
         const avatar = await Canvas.loadImage(image);

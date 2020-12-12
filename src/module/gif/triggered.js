@@ -9,7 +9,7 @@ module.exports = class Triggered {
      * @param {number} timeout 
      */
     async getImage(image, timeout = 15) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         if (isNaN(timeout)) throw new Error(`The timeout argument must be a number.`);
         const base = await Canvas.loadImage(`${__dirname}/../../assets/triggered.png`);
         const img = await Canvas.loadImage(image);

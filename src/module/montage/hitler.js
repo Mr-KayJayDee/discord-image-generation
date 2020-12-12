@@ -6,7 +6,7 @@ module.exports = class Hitler {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         let bg = await jimp.read(`${__dirname}/../../assets/hitler.png`);
         let img = await jimp.read(image);
         img.resize(140, 140);

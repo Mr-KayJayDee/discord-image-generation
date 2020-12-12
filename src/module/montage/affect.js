@@ -6,7 +6,7 @@ module.exports = class Affect {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         let base = await jimp.read(`${__dirname}/../../assets/affect.png`);
         let img = await jimp.read(image);
         img.resize(200, 157);

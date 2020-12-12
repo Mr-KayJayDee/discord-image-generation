@@ -6,7 +6,7 @@ module.exports = class DiscordBlack {
      * @param {image} image1
     */
     async getImage(image1) {
-        if (!image1) throw new Error(`You must provide an image as argument.`);
+        if (!image1) throw new Error(`You must provide an image as an argument`);
         const canvas = Canvas.createCanvas(610, 610);
         const ctx = canvas.getContext(`2d`);
         image1 = await Canvas.loadImage(image1);

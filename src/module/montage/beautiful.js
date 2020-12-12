@@ -6,7 +6,7 @@ module.exports = class Beautiful {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         let base = await jimp.read(`${__dirname}/../../assets/beautiful.png`);
         base.resize(376, 400);
         let img = await jimp.read(image);

@@ -161,6 +161,10 @@ bot.login("super_secret_token")
 
 ![Jail](https://imgur.com/QslACNo.png)
 
+- ``new DIG.Karaba().getImage(`<Avatar>`);``
+
+![Karaba](https://imgur.com/4aEZs6v.png)
+
 - ``new DIG.Kiss().getImage(`<Avatar>`, `<Avatar2>`);``
 
 ![Kiss](https://imgur.com/sSoCAeH.png)
@@ -232,6 +236,10 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.4.5
+- Added Karaba()
+- Fixed some errors returns that were not the same
 
 ## v1.4.0
 - Added DiscordBlack() and DiscordBlue()

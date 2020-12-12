@@ -6,7 +6,7 @@ module.exports = class Geryscale {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         image = await jimp.read(image);
         image.greyscale();
         let raw;

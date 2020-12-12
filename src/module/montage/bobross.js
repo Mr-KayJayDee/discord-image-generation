@@ -6,7 +6,7 @@ module.exports = class Bobross {
    * @param {image} image1
   */
     async getImage(image1) {
-        if (!image1) throw new Error(`You must provide an image as argument.`);
+        if (!image1) throw new Error(`You must provide an image as an argument`);
         const base = await loadImage(`${__dirname}/../../assets/bobross.png`);
         const canvas = createCanvas(base.width, base.height);
         const ctx = canvas.getContext(`2d`);

@@ -6,7 +6,7 @@ module.exports = class Gay {
      * @param {image} image 
      */
     async getImage(image) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         let bg = await Canvas.loadImage(`${__dirname}/../../assets/gay.png`);
         let img = await Canvas.loadImage(image);
         const canvas = Canvas.createCanvas(480, 480);

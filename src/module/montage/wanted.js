@@ -9,7 +9,7 @@ module.exports = class Wanted {
      * @param {image} image 
      */
     async getImage(image, currency = `$`) {
-        if (!image) throw new Error(`You must provide an image.`);
+        if (!image) throw new Error(`You must provide an image as a first argument.`);
         if (typeof currency != `string`) throw new Error(`You must provide a string for the currency.`);
         if (currency.length > 1) throw new Error(`You must provide only one character for the currency.`);
         var price = Math.floor(Math.random() * 188708) + 329889;
