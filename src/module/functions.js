@@ -8,7 +8,7 @@ module.exports = {
      * @param {number} width the default width
      * @param {string} font the font
      */
-    applyText(canvas, text, defaultFontSize, width, font){
+    applyText(canvas, text, defaultFontSize, width, font) {
         const ctx = canvas.getContext(`2d`);
         do {
             ctx.font = `${(defaultFontSize -= 1)}px ${font}`;
