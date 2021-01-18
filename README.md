@@ -94,7 +94,9 @@ bot.login("super_secret_token")
 
 ## Gifs
 
-- ``new DIG.Blink().getImage(`<Avatar>`, `<Avatar2>`, `<Timeout (Number in ms)>`);``
+- ``new DIG.Blink().getImage(`<Avatar>`, `<Avatar2>`.....);``
+
+> You can add as many images as you want 
 
 ![Blink](https://imgur.com/JjUXmRU.gif)
 
@@ -236,6 +238,9 @@ bot.login("super_secret_token")
 ![Color](https://imgur.com/40tMwfe.png)
 
 # Changelog 
+
+## v1.4.7
+- Improved Blink() generation, now supports adding an insane amount of images ^^
 
 ## v1.4.5
 - Added Karaba()

@@ -4,10 +4,9 @@ const GIFEncoder = require(`gifencoder`);
 module.exports = class Blink {
 
     async getImage( ...images) {
-        console.log(images)
-        if (!images || images.length < 2) throw new Error(`You must provide an image as a first argument.`);
+        if (!images || images.length < 2) throw new Error(`You must provide at least two images.`);
         
-        const GIF = new GIFEncoder(480, 480)
+        const GIF = new GIFEncoder(480, 480);
         GIF.start();
         GIF.setRepeat(0);
         GIF.setDelay(1000);
