@@ -239,6 +239,9 @@ bot.login("super_secret_token")
 
 # Changelog 
 
+## v1.4.8
+- Typings added, thanks to https://github.com/Lioness100
+
 ## v1.4.7
 - Improved Blink() generation, now supports adding an insane amount of images ^^
 
@@ -318,3 +321,6 @@ bot.login("super_secret_token")
     - There is now a random price diplayed
     - You can now configure a currency
 - Added .thomas()
+
+
+Thanks to Alex15#0010 for the big help ! ❤
