@@ -3,6 +3,7 @@
   "version": "1.4.7",
   "description": "discord-image-generation is a powerfull module that allow you to generate awesome images.",
   "main": "src/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "test": "node src/index.js"
   },
