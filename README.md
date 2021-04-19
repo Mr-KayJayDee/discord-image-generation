@@ -13,7 +13,7 @@ A correct and understandable issue contains :
 - Code that summonned the error
 - The complete error
 
-You can also join me on my <a href="https://discord.gg/Uqd2sQP">discord server.</a>
+Please join [this](https://discord.gg/7SBruKCTvQ) community server to follow all my projects or if you need help.
 
 <a href="https://discord.gg/Uqd2sQP"><img src="https://discord.com/api/guilds/527836578912010251/widget.png" alt="Amandine support server"/></a>
 
