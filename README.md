@@ -13,8 +13,14 @@ A correct and understandable issue contains :
 - Code that summonned the error
 - The complete error
 
-Please join [this](https://discord.gg/7SBruKCTvQ) community server to follow all my projects or if you need help.
+Please join [this](https://discord.gg/5ZSGFYtnqw) community server to follow all my projects or if you need help.
 
+# Links: 
+
+### Support Server Community
+<a href="https://discord.gg/5ZSGFYtnqw"><img src="https://discord.com/api/guilds/833309512412299276/widget.png" alt="Amandine support server"/></a>
+
+### Amandine Discord Bot Support Server
 <a href="https://discord.gg/Uqd2sQP"><img src="https://discord.com/api/guilds/527836578912010251/widget.png" alt="Amandine support server"/></a>
 
 # Download
