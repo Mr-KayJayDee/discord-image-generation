@@ -41,6 +41,7 @@ const DIG = require("discord-image-generation");
 
 Then you have to request your image and send it as an attachement.
 
+## Discord.js v12
 ```js
 // Import the discord.js library.
 const Discord = require("discord.js")
@@ -57,6 +58,7 @@ bot.on("ready", () => {
 
 // Listen to the message event
 bot.on("message", async (message) => {
+    // Send the image in a simple message
     if (message.content === "*delete") {
         // Get the avatarUrl of the user
         let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
@@ -66,11 +68,70 @@ bot.on("message", async (message) => {
         let attach = new Discord.MessageAttachment(img, "delete.png");;
         message.channel.send(attach)
     }
+    // Send the message with the image attached to an embed
+    if (message.content === "*blur") {
+        // Get the avatarUrl of the user
+        let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
+        // Make the image
+        let img = await new DIG.Blur().getImage(avatar)
+        // Add the image as an attachement
+        let embed = new Discord.MessageEmbed()
+            .setTitle("Blur")
+            .setImage("attachment://delete.png")
+        let attach = new Discord.MessageAttachment(img, "blur.png");;
+        message.channel.send({ embed: embed, files: [attach])
+    }
 })
 
 // Log in to the bot
 bot.login("super_secret_token")
-````
+```
+
+## Discord.js v13
+```js
+// Import the discord.js library.
+const Discord = require("discord.js")
+// Create a new discord.js client.
+const bot = new Discord.Client()
+
+const DIG = require("discord-image-generation");
+> You can also destructure to avoid repeating DIG.
+
+// Listen to the ready event
+bot.on("ready", () => {
+    console.log("ok");  
+})
+
+// Listen to the message event
+bot.on("messageCreate", async (message) => {
+    // Send the image in a simple message
+    if (message.content === "*delete") {
+        // Get the avatarUrl of the user
+        let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
+        // Make the image
+        let img = await new DIG.Delete().getImage(avatar)
+        // Add the image as an attachement
+        let attach = new Discord.MessageAttachment(img, "delete.png");;
+        message.channel.send({ files: [attach] })
+    }
+    // Send the message with the image attached to an embed
+    if (message.content === "*blur") {
+        // Get the avatarUrl of the user
+        let avatar = message.author.displayAvatarURL({ dynamic: false, format: 'png' });
+        // Make the image
+        let img = await new DIG.Blur().getImage(avatar)
+        // Add the image as an attachement
+        let embed = new Discord.MessageEmbed()
+            .setTitle("Blur")
+            .setImage("attachment://delete.png")
+        let attach = new Discord.MessageAttachment(img, "blur.png");;
+        message.channel.send({ embeds: [embed], files: [attach])
+    }
+})
+
+// Log in to the bot
+bot.login("super_secret_token")
+```
 
 # Available images
 
