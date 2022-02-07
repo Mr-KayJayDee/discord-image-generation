@@ -19,9 +19,6 @@
   "bugs": {
     "url": "https://github.com/Mr-KayJayDee/discord-image-generation/issues"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/discord-image-generation"
-  },
   "homepage": "https://github.com/Mr-KayJayDee/discord-image-generation#readme",
   "keywords": [
     "discord",
